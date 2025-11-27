@@ -21,3 +21,10 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  base: '/nutriwheel2.github.io/', // <<<<< สำคัญมาก ต้องตรงกับชื่อ repo
+  plugins: [react()],
+})
