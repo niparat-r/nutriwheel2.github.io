@@ -22,7 +22,8 @@ export default defineConfig(({ mode }) => {
     },
 
     build: {
-      outDir: 'dist',
+      // Output to "docs" so GitHub Pages can serve the built assets directly
+      outDir: 'docs',
     },
 
     resolve: {
